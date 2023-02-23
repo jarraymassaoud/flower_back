@@ -2,10 +2,10 @@ const mongoose = require("mongoose");
 
 const cartSchema = new mongoose.Schema(
   {
-    userID: { type: String, required: true },
+    userId: { type: String, required: true },
     products: [
       {
-        productID: { type: String },
+        productId: { type: String },
         quantity: { type: Number, default: 1 },
       },
     ],
